@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/css/kube.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+  <body>
+    header == slim :header,  :layout => false
+
+    #wrap
+      .units-container.units-split
+        .units-row.unit-padding
+          .unit-20
+            #sidebar == slim :sidebar, :layout => false
+          .unit-80
+            #content == yield
+
+  </body>
+</html>
